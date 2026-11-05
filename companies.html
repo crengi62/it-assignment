@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 5 Indian IT Companies | FY 25-26</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">Information Technology (Code 402)</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="companies.html" class="active">Top 5 IT Companies</a>
+      <a href="government-portals.html">Govt Portals</a>
+      <a href="sources.html">Sources</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Top 5 IT Companies in India</h1>
+    <p>Ranked in <strong>descending order</strong> based on verified FY 2025–26 revenue. Click any tile to inspect full corporate profiles, line graphs, software suites, and operating countries.</p>
+
+    <!-- 4.2 Live Search Bar -->
+    <div class="search-wrapper">
+      <input 
+        type="text" 
+        id="companySearch" 
+        class="search-input" 
+        placeholder="🔍 Search company by name, software, or headquarters..."
+        onkeyup="filterCompanies()"
+      >
+    </div>
+
+    <!-- Company Grid Directory -->
+    <div class="company-grid" id="companyGrid">
+      <!-- 1. TCS -->
+      <a href="companies/tcs.html" class="company-tile" data-name="tata consultancy services tcs mumbai bancs ignio">
+        <div class="tile-rank">#1</div>
+        <img src="assets/tcs-logo.png" alt="TCS Logo" class="tile-logo" onerror="this.src='https://placehold.co/55x55?text=TCS'">
+        <div class="tile-info">
+          <h3>Tata Consultancy Services (TCS)</h3>
+          <span>Revenue: ₹2,67,021 Cr • 584,500+ Employees • Mumbai</span>
+        </div>
+      </a>
+
+      <!-- 2. Infosys -->
+      <a href="companies/infosys.html" class="company-tile" data-name="infosys limited finacle topaz cobalt bengaluru bangalore">
+        <div class="tile-rank">#2</div>
+        <img src="assets/infosys-logo.png" alt="Infosys Logo" class="tile-logo" onerror="this.src='https://placehold.co/55x55?text=INFY'">
+        <div class="tile-info">
+          <h3>Infosys Limited</h3>
+          <span>Revenue: ₹1,78,803 Cr • 328,500+ Employees • Bengaluru</span>
+        </div>
+      </a>
+
+      <!-- 3. HCLTech -->
+      <a href="companies/hcltech.html" class="company-tile" data-name="hcltech hcl technologies dryice bigfix noida">
+        <div class="tile-rank">#3</div>
+        <img src="assets/hcl-logo.png" alt="HCLTech Logo" class="tile-logo" onerror="this.src='https://placehold.co/55x55?text=HCL'">
+        <div class="tile-info">
+          <h3>HCLTech (HCL Technologies)</h3>
+          <span>Revenue: ₹1,21,480 Cr • 230,000+ Employees • Noida</span>
+        </div>
+      </a>
+
+      <!-- 4. Wipro -->
+      <a href="companies/wipro.html" class="company-tile" data-name="wipro limited ai360 holmes topcoder bengaluru bangalore">
+        <div class="tile-rank">#4</div>
+        <img src="assets/wipro-logo.png" alt="Wipro Logo" class="tile-logo" onerror="this.src='https://placehold.co/55x55?text=WIPRO'">
+        <div class="tile-info">
+          <h3>Wipro Limited</h3>
+          <span>Revenue: ₹92,624 Cr • 234,000+ Employees • Bengaluru</span>
+        </div>
+      </a>
+
+      <!-- 5. Tech Mahindra -->
+      <a href="companies/tech-mahindra.html" class="company-tile" data-name="tech mahindra netops canvas pune 5g telecom">
+        <div class="tile-rank">#5</div>
+        <img src="assets/techm-logo.png" alt="Tech Mahindra Logo" class="tile-logo" onerror="this.src='https://placehold.co/55x55?text=TECHM'">
+        <div class="tile-info">
+          <h3>Tech Mahindra</h3>
+          <span>Revenue: ₹54,200 Cr • 148,000+ Employees • Pune</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- 4.1 Side-by-Side Comparison Table -->
+    <div class="card" style="margin-top: 2.5rem;">
+      <h2>Executive Comparison Matrix</h2>
+      <p>Quick overview of all five IT conglomerates sorted in descending order of operational performance:</p>
+      
+      <div style="overflow-x: auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Company</th>
+              <th>FY 25–26 Revenue</th>
+              <th>Headcount</th>
+              <th>Global HQ</th>
+              <th>Flagship Platform</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>#1</strong></td>
+              <td>Tata Consultancy Services</td>
+              <td><strong>₹2,67,021 Cr</strong></td>
+              <td>584,519</td>
+              <td>Mumbai, MH</td>
+              <td>TCS BaNCS / ignio™</td>
+            </tr>
+            <tr>
+              <td><strong>#2</strong></td>
+              <td>Infosys Limited</td>
+              <td><strong>₹1,78,803 Cr</strong></td>
+              <td>328,594</td>
+              <td>Bengaluru, KA</td>
+              <td>Finacle / Topaz</td>
+            </tr>
+            <tr>
+              <td><strong>#3</strong></td>
+              <td>HCLTech</td>
+              <td><strong>₹1,21,480 Cr</strong></td>
+              <td>230,000</td>
+              <td>Noida, UP</td>
+              <td>DRYiCE / BigFix</td>
+            </tr>
+            <tr>
+              <td><strong>#4</strong></td>
+              <td>Wipro Limited</td>
+              <td><strong>₹92,624 Cr</strong></td>
+              <td>234,000</td>
+              <td>Bengaluru, KA</td>
+              <td>ai360 / HOLMES</td>
+            </tr>
+            <tr>
+              <td><strong>#5</strong></td>
+              <td>Tech Mahindra</td>
+              <td><strong>₹54,200 Cr</strong></td>
+              <td>148,000</td>
+              <td>Pune, MH</td>
+              <td>netOps.ai / Blue Marble</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Made for Class 9 IT Assignment • Question 1 Directory
+  </footer>
+
+  <!-- Instant Search Script -->
+  <script>
+    function filterCompanies() {
+      const input = document.getElementById('companySearch').value.toLowerCase();
+      const tiles = document.querySelectorAll('.company-tile');
+      
+      tiles.forEach(tile => {
+        const text = tile.getAttribute('data-name');
+        if (text.includes(input)) {
+          tile.style.display = 'flex';
+        } else {
+          tile.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

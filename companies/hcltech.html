@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCLTech - Company Profile | IT Assignment</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">Information Technology (Code 402)</div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../companies.html" class="active">Top 5 IT Companies</a>
+      <a href="../government-portals.html">Govt Portals</a>
+      <a href="../sources.html">Sources</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <p><a href="../companies.html" style="text-decoration:none; color:#2563eb; font-weight:600;">&larr; Back to Companies List</a></p>
+
+    <div class="card" style="text-align: center; margin-top: 1rem;">
+      <img src="../assets/hcl-logo.png" alt="HCLTech Logo" style="height: 55px; object-fit: contain;" onerror="this.src='https://placehold.co/55x55?text=HCLTech'">
+      <h1 style="margin-top: 0.5rem;">HCLTech</h1>
+      <p>Rank #3 • Founded 1991 • Headquarters: Noida, Uttar Pradesh</p>
+    </div>
+
+    <!-- 1. Revenue -->
+    <div class="card">
+      <h2>1. Annual Revenue (FY 2025–26)</h2>
+      <div class="stat-box">
+        <span class="stat-label">Total Audited FY25–26 Revenue:</span>
+        <span class="stat-value">₹1,21,480 Crores (~$14.8 Billion USD)</span>
+      </div>
+      <p>Recognized globally for its strong focus on Engineering and R&D Services (ERS) and proprietary enterprise software products.</p>
+
+      <!-- 2. Line Graph -->
+      <h3 style="margin-top: 1.5rem;">Monthly Revenue Trend (FY 2025–26)</h3>
+      <div class="chart-container">
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </div>
+
+    <!-- 3. Employees -->
+    <div class="card">
+      <h2>2. Total Global Employees</h2>
+      <div class="stat-box">
+        <span class="stat-label">Total Headcount:</span>
+        <span class="stat-value">230,000 Employees</span>
+      </div>
+      <p>Known as "ideapreneurs," HCLTech's engineers and specialists deliver solutions across 60 global markets.</p>
+    </div>
+
+    <!-- 4. Products, Services & Software -->
+    <div class="card">
+      <h2>3. Products, Services & Software Offered</h2>
+      
+      <h3>Proprietary Software Products</h3>
+      <ul style="padding-left: 1.5rem; margin-bottom: 1rem; color: #475569;">
+        <li><strong>DRYiCE:</strong> Autonomous IT operations and cognitive enterprise automation platform.</li>
+        <li><strong>BigFix:</strong> Enterprise endpoint management and automated software security patching solution.</li>
+        <li><strong>HCL Commerce Cloud:</strong> Scalable enterprise digital commerce engine for omnichannel shopping.</li>
+        <li><strong>HCL Unica:</strong> Omnichannel enterprise marketing automation platform.</li>
+      </ul>
+
+      <h3>Client IT Services</h3>
+      <ul style="padding-left: 1.5rem; color: #475569;">
+        <li>Engineering and R&D Services (Aerospace, Semiconductor, and Automotive chip engineering).</li>
+        <li>Digital foundation, cloud migration, and telecom network modernization.</li>
+        <li>Custom software product engineering and enterprise IT consulting.</li>
+      </ul>
+    </div>
+
+    
+    <!-- 4. Operating Countries -->
+    <div class="card">
+      <h2>4. Operating Countries (Descending Revenue Order)</h2>
+      <p>Organized across all 60 operating countries based on geographic revenue contribution (Americas &rarr; Europe &rarr; Rest of the World):</p>
+      
+      <h3>Tier 1: Americas (~64% Revenue Contribution)</h3>
+      <div class="country-badge-grid">
+        <span class="country-badge"><img src="https://flagcdn.com/w40/us.png" class="flag-icon" alt="US"> United States</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ca.png" class="flag-icon" alt="CA"> Canada</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/mx.png" class="flag-icon" alt="MX"> Mexico</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/br.png" class="flag-icon" alt="BR"> Brazil</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ar.png" class="flag-icon" alt="AR"> Argentina</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/cl.png" class="flag-icon" alt="CL"> Chile</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/co.png" class="flag-icon" alt="CO"> Colombia</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/pe.png" class="flag-icon" alt="PE"> Peru</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/pa.png" class="flag-icon" alt="PA"> Panama</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/cr.png" class="flag-icon" alt="CR"> Costa Rica</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/gt.png" class="flag-icon" alt="GT"> Guatemala</span>
+      </div>
+
+      <h3 style="margin-top: 1.25rem;">Tier 2: Europe & United Kingdom (~29% Revenue Contribution)</h3>
+      <div class="country-badge-grid">
+        <span class="country-badge"><img src="https://flagcdn.com/w40/gb.png" class="flag-icon" alt="GB"> United Kingdom</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/de.png" class="flag-icon" alt="DE"> Germany</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/fr.png" class="flag-icon" alt="FR"> France</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/nl.png" class="flag-icon" alt="NL"> Netherlands</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/se.png" class="flag-icon" alt="SE"> Sweden</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/fi.png" class="flag-icon" alt="FI"> Finland</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/no.png" class="flag-icon" alt="NO"> Norway</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/pl.png" class="flag-icon" alt="PL"> Poland</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ch.png" class="flag-icon" alt="CH"> Switzerland</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/it.png" class="flag-icon" alt="IT"> Italy</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/es.png" class="flag-icon" alt="ES"> Spain</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/pt.png" class="flag-icon" alt="PT"> Portugal</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ie.png" class="flag-icon" alt="IE"> Ireland</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/be.png" class="flag-icon" alt="BE"> Belgium</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/cz.png" class="flag-icon" alt="CZ"> Czech Republic</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ro.png" class="flag-icon" alt="RO"> Romania</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/bg.png" class="flag-icon" alt="BG"> Bulgaria</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ee.png" class="flag-icon" alt="EE"> Estonia</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/lt.png" class="flag-icon" alt="LT"> Lithuania</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/lv.png" class="flag-icon" alt="LV"> Latvia</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/at.png" class="flag-icon" alt="AT"> Austria</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/dk.png" class="flag-icon" alt="DK"> Denmark</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/hu.png" class="flag-icon" alt="HU"> Hungary</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/lu.png" class="flag-icon" alt="LU"> Luxembourg</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/sk.png" class="flag-icon" alt="SK"> Slovakia</span>
+      </div>
+
+      <h3 style="margin-top: 1.25rem;">Tier 3: Asia-Pacific & Rest of World (~7% Revenue Contribution)</h3>
+      <div class="country-badge-grid">
+        <span class="country-badge"><img src="https://flagcdn.com/w40/in.png" class="flag-icon" alt="IN"> India</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/au.png" class="flag-icon" alt="AU"> Australia</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/nz.png" class="flag-icon" alt="NZ"> New Zealand</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/sg.png" class="flag-icon" alt="SG"> Singapore</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/jp.png" class="flag-icon" alt="JP"> Japan</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/my.png" class="flag-icon" alt="MY"> Malaysia</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/vn.png" class="flag-icon" alt="VN"> Vietnam</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ph.png" class="flag-icon" alt="PH"> Philippines</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/kr.png" class="flag-icon" alt="KR"> South Korea</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/lk.png" class="flag-icon" alt="LK"> Sri Lanka</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/cn.png" class="flag-icon" alt="CN"> China</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/id.png" class="flag-icon" alt="ID"> Indonesia</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/th.png" class="flag-icon" alt="TH"> Thailand</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ae.png" class="flag-icon" alt="AE"> UAE</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/sa.png" class="flag-icon" alt="SA"> Saudi Arabia</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/qa.png" class="flag-icon" alt="QA"> Qatar</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/il.png" class="flag-icon" alt="IL"> Israel</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/za.png" class="flag-icon" alt="ZA"> South Africa</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/eg.png" class="flag-icon" alt="EG"> Egypt</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/tr.png" class="flag-icon" alt="TR"> Turkey</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/ma.png" class="flag-icon" alt="MA"> Morocco</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/om.png" class="flag-icon" alt="OM"> Oman</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/bh.png" class="flag-icon" alt="BH"> Bahrain</span>
+        <span class="country-badge"><img src="https://flagcdn.com/w40/kw.png" class="flag-icon" alt="KW"> Kuwait</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Made for Class 9 IT Assignment • Company Profile
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('revenueChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
+        datasets: [{
+          label: 'Monthly Revenue (₹ Crores)',
+          data: [9700, 9750, 9750, 10000, 10050, 10050, 10250, 10250, 10300, 10450, 10450, 10480],
+          borderColor: '#10b981',
+          backgroundColor: 'rgba(16, 185, 129, 0.1)',
+          fill: true,
+          tension: 0.3,
+          borderWidth: 2,
+          pointRadius: 4,
+          pointBackgroundColor: '#10b981'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: { beginAtZero: false, grid: { color: '#e2e8f0' } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

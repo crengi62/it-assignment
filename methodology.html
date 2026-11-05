@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Methodology & Development | IT Assignment</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">Information Technology (Code 402)</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="companies.html">Top 5 IT Companies</a>
+      <a href="government-portals.html">Govt Portals</a>
+      <a href="methodology.html" class="active">Methodology</a>
+      <a href="sources.html">Sources</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Project Methodology & Development</h1>
+    <p>An architectural breakdown of how this web portal was researched, planned, engineered, and deployed for the Class 9 Information Technology assignment.</p>
+
+    <!-- Phase 1: Planning -->
+    <div class="card">
+      <h2>Phase 1: Project Scope & Architecture</h2>
+      <p>While the standard assignment submission format suggested a Word document or presentation, building a responsive multi-page web application was chosen to better demonstrate practical digital skills covered under CBSE Subject Code 402.</p>
+      
+      <h3>Core Technical Objectives:</h3>
+      <ul style="padding-left: 1.5rem; line-height: 1.8; color: #475569;">
+        <li><strong>Multi-Page Modular Structure:</strong> Organizing content across dedicated pages rather than a single long document to keep code clean and maintainable.</li>
+        <li><strong>Responsive Light Theme:</strong> Designing a minimal, high-readability user interface using custom CSS without heavy third-party CSS frameworks.</li>
+        <li><strong>Data Visualization:</strong> Integrating client-side interactive line charts to illustrate FY 2025–26 revenue trajectories across all four financial quarters.</li>
+      </ul>
+    </div>
+
+    <!-- Phase 2: Research -->
+    <div class="card">
+      <h2>Phase 2: Research & Data Synthesis</h2>
+      <p>Collecting verified metrics for India's top five IT firms required aggregating information across several corporate and statutory records:</p>
+      
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.25rem; margin-top: 0.75rem;">
+        <h3 style="margin-top: 0;">Research Workflow:</h3>
+        <ol style="padding-left: 1.25rem; line-height: 1.8; color: #475569;">
+          <li><strong>Financial Audits:</strong> Pulled full-year revenue totals directly from TCS, Infosys, HCLTech, Wipro, and Tech Mahindra investor filings, converting global USD figures to Indian Crores (INR) for fair comparison.</li>
+          <li><strong>Geographic Mapping:</strong> Cataloged international office directories, grouping every operating country into regional tiers (Americas, Europe/UK, and APAC/MEA) by revenue weight.</li>
+          <li><strong>Analytical Assistance:</strong> Utilized AI search and analysis tools as research partners to synthesize large quarterly tables, cross-check total employee numbers, and verify software platforms.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Phase 3: Development -->
+    <div class="card">
+      <h2>Phase 3: Front-End Development & Engineering</h2>
+      <p>The entire project was developed locally using <strong>Visual Studio Code</strong>, structuring the application into clear logical directories:</p>
+      
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Directory / Component</th>
+            <th>Role in Application</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/ (Root)</code></td>
+            <td>Contains core entry pages: cover portal (<code>index.html</code>), main company directory (<code>companies.html</code>), government links (<code>government-portals.html</code>), documentation, and sources.</td>
+          </tr>
+          <tr>
+            <td><code>/companies/</code></td>
+            <td>Dedicated HTML templates for each IT conglomerate detailing financial stats, Chart.js trend curves, software lists, and complete country directories.</td>
+          </tr>
+          <tr>
+            <td><code>/css/style.css</code></td>
+            <td>A single, shared stylesheet utilizing CSS Flexbox, Grid, custom stat cards, and clean typography to ensure visual consistency across all pages.</td>
+          </tr>
+          <tr>
+            <td><code>/assets/</code></td>
+            <td>Houses all local corporate logos, school crests, and site favicon files.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top: 1.5rem;">Key Interactive Features Added:</h3>
+      <ul style="padding-left: 1.5rem; line-height: 1.8; color: #475569;">
+        <li><strong>Client-Side Search:</strong> A real-time JavaScript filter on <code>companies.html</code> allowing instant searching by company name, software, or headquarters city without page reloads.</li>
+        <li><strong>Cross-Platform Flag Delivery:</strong> Integrated FlagCDN image embeds so national flags render consistently across all operating systems and browsers.</li>
+        <li><strong>Dynamic Line Charts:</strong> Implemented Chart.js line graphs with custom styling to plot financial trends clearly.</li>
+      </ul>
+    </div>
+
+    <!-- Phase 4: Testing & Deployment -->
+    <div class="card">
+      <h2>Phase 4: Testing, Version Control & Hosting</h2>
+      <p>Before deployment, all links, image paths, and scripts were tested locally using a local development server in VS Code to ensure zero 404 errors or broken relative paths.</p>
+      <p>Finally, the project was committed to a public <strong>GitHub</strong> repository and deployed to the web via <strong>GitHub Pages</strong>, providing an accessible, live HTTPS link for school submission.</p>
+    </div>
+  </main>
+
+  <footer>
+    Made for Class 9 IT Assignment • Project Methodology
+  </footer>
+
+</body>
+</html>
